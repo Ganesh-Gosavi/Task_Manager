@@ -1,0 +1,27 @@
+:root {
+  --openSans-fontFamily: "Open Sans", sans-serif;
+  --poppins-fontFamily: "Poppins", sans-serif;
+  --notoSans-fontFamily: "Noto Sans", sans-serif;
+  --inter-fontFamily: "Inter", sans-serif;
+  --main-color: #17a2b8;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+ul,
+p,
+button,
+option {
+  margin: 0;
+  padding: 0;
+}

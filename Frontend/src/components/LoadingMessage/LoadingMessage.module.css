@@ -1,0 +1,25 @@
+.mainContainer {
+  /* border: 2px solid black; */
+  border-radius: 12px;
+  height: 2rem;
+  padding: 10px;
+  background-color: white;
+  position: fixed;
+  top: 10px;
+  left: 45%;
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  width: 10rem;
+  box-shadow: 1px 0px 40px 16px #100b2736;
+}
+
+.mainContainer > img {
+  width: 2.5rem;
+}
+
+.mainContainer > p {
+  font-family: var(--poppins-fontFamily);
+  font-weight: 600;
+  font-size: 1rem;
+}

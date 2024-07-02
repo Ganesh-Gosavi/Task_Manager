@@ -1,0 +1,64 @@
+.statusBoard {
+  position: relative;
+  flex: 0 0 27%;
+  height: 77vh;
+  margin: 1rem;
+  padding: 0 10px 20px 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #eef2f5;
+}
+
+.statusBoard::-webkit-scrollbar {
+  width: 0.8vw;
+}
+
+.statusBoard::-webkit-scrollbar-track {
+  background: #d6eaf4;
+}
+
+.statusBoard::-webkit-scrollbar-thumb {
+  background: #9cb7c5;
+  border: 1px solid white;
+  border-radius: 1rem;
+}
+
+.statusBoard::-webkit-scrollbar-button {
+  display: none;
+}
+
+.topOfTheBoard {
+  background-color: #eef2f5;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.topOfTheBoard > p {
+  font-family: var(--poppins-fontFamily);
+  font-weight: 500;
+  font-size: 1rem;
+  margin-left: 2px;
+}
+
+.topOfTheBoard > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 5px;
+}
+
+.alternateMessg {
+  margin-top: 1rem;
+  font-family: var(--poppins-fontFamily);
+  font-weight: 500;
+  font-size: 2rem;
+  margin-left: 2px;
+  color: rgb(0 0 0 / 23%);
+}

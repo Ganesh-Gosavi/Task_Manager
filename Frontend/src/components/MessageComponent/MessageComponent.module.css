@@ -1,0 +1,18 @@
+.messageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  font-family: var(--poppins-fontFamily);
+  font-weight: 600;
+  font-size: 1rem;
+  width: 100px;
+  height: 0.8rem;
+  border-radius: 12px;
+  border: 1px solid #48c1b5;
+  background: #f6fff9;
+  padding: 20px 55px 20px 55px;
+  box-shadow: 0px 4px 16px 0px #100b2714;
+}

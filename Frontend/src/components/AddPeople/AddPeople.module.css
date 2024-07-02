@@ -1,0 +1,103 @@
+.popupheading {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 1rem;
+  }
+  /* .field{
+    margin-left: 2rem;
+  } */
+  .input {
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    width: 770px;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    
+  }
+  .popuppriority {
+    display: flex;
+    font-size: 15px;
+    gap: 2rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 1rem;
+  }
+  .popupchecklist {
+    font-size: 15px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 1rem;
+    color: #707070;
+  }
+  .priority{
+    width: 200px;
+    height: 30px;
+    color: #707070;
+    font-weight: bold;
+    border: 1px solid #707070;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  cursor: pointer;
+  
+  }
+  .addnew {
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    width: 670px;
+    height: 30px;
+    font-size: 14px;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+  }
+  
+  .popupaddtask {
+    min-height: 40vh;
+  }
+  .button {
+    color: #ffffff;
+    background-color: #17a2b8;
+    height: 40px;
+    width: 210px;
+    border: none;
+    border-radius: 5rem;
+    margin-bottom: 1rem;
+    font-size: 15px;
+  }
+  .buttonRegister {
+    font-size: 15px;
+    color: #ff0000;
+    background-color: #ffffff;
+    height: 40px;
+    width: 210px;
+    border: 1px solid #ff0000;
+    border-radius: 5rem;
+    margin-right: 1rem;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  .popupdata{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 40px;
+    border: 1px solid #E2E2E2;
+    border-radius: 15px;
+    font-size: 15px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #707070;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .addtask{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+  }
+  

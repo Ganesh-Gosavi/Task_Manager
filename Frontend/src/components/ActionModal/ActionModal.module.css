@@ -1,0 +1,73 @@
+.modal {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalContent {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 21px 14px;
+  border: 1px solid #888;
+  width: 20%;
+  height: 22%;
+  border-radius: 0.6819rem;
+}
+
+.modalBox {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modalBox > p {
+  font-family: var(--notoSans-fontFamily);
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.buttons > button {
+  width: 100%;
+  height: 3rem;
+  cursor: pointer;
+  border-radius: 0.75rem;
+  box-shadow: 0px 2px 12px 0px #82698c33;
+  font-family: var(--poppins-fontFamily);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.logoutBtn {
+  background: var(--main-color);
+  border: none;
+  color: #ffffff;
+}
+
+.logoutBtn:hover {
+  box-shadow: 0px 2px 12px 0px #82698c;
+}
+
+.cancelBtn {
+  background: transparent;
+  border: 1px solid #cf3636;
+  color: #cf3636;
+}
+
+.cancelBtn:hover {
+  box-shadow: 0px 2px 12px 0px #82698c;
+}

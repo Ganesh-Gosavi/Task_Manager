@@ -1,0 +1,92 @@
+.mainBoardSection {
+  width: 85vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mainBoardSection p {
+  font-family: var(--poppins-fontFamily);
+}
+
+/* Top Section css */
+
+.topHeadings {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 1rem 0 1rem;
+}
+
+.username {
+  font-weight: 600;
+  font-size: 1.375rem;
+}
+.addpeple{
+  font-size: 1.25rem;
+  color: #707070;
+  cursor: pointer;
+  margin-left: 2rem;
+}
+.date {
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #707070;
+}
+
+/* Mid Section css */
+.midSection {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+
+.pageHeading {
+  font-weight: 500;
+  font-size: 1.8125rem;
+}
+
+.selectBtn {
+  width: 7rem;
+  font-family: var(--poppins-fontFamily);
+  border: none;
+  padding: 4px 0px 4px 1px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.selectBtn:focus {
+  outline: none;
+}
+
+.selectBtn > option {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Last section css */
+.lastSection {
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.lastSection::-webkit-scrollbar {
+  width: 0.8vw;
+}
+
+.lastSection::-webkit-scrollbar-track {
+  background: white;
+}
+
+.lastSection::-webkit-scrollbar-thumb {
+  background: #9cb7c5;
+  border: 1px solid white;
+  border-radius: 1rem;
+}
+
+.lastSection::-webkit-scrollbar-button {
+  display: none;
+}

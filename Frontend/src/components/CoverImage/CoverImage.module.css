@@ -1,0 +1,41 @@
+.coverSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  width: 60vw;
+  z-index: 0;
+}
+
+.imageSec {
+  position: relative;
+}
+
+.imageSec > .bgCircle {
+  height: 86%;
+  width: 100%;
+  background-color: #317f8b;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+}
+
+.imageSec img {
+  margin-left: 5px;
+  margin-top: 1rem;
+  width: 95%;
+}
+
+.text {
+  font-family: var(--openSans-fontFamily);
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.text > span {
+  font-size: 1rem;
+  font-weight: 400;
+}

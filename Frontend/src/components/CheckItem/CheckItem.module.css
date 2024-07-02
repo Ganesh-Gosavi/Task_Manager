@@ -1,0 +1,27 @@
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 12px;
+  white-space: pre-wrap;
+  border: 1px solid #e2e2e2;
+}
+
+.item input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.5);
+  border: 2px solid #e2e2e2;
+  cursor: pointer;
+}
+
+.textArea {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  resize: none;
+  font-family: var(--inter-fontFamily);
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 16.94px;
+}

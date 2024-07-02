@@ -1,0 +1,77 @@
+.mainAnalyticSection {
+  width: 85vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.heading {
+  font-family: var(--openSans-fontFamily);
+  font-size: 1.375rem;
+  font-weight: 600;
+  margin-top: 1.8rem;
+  margin-left: 3rem;
+}
+
+.cards {
+  display: flex;
+  gap: 3rem;
+}
+
+.cards > div {
+  width: 35%;
+  height: 18.5rem;
+  background: #f9fcff;
+  border-radius: 12px;
+}
+
+.cards > div:nth-child(1) {
+  margin-left: 3rem;
+}
+
+.cardItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.listItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.item > p {
+  font-family: var(--openSans-fontFamily);
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: #90c4cc;
+  border-radius: 50%;
+  margin-left: 2rem;
+}
+
+.number {
+  font-family: var(--openSans-fontFamily);
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-right: 1rem;
+}
+
+.serverError {
+  font-family: var(--poppins-fontFamily);
+  font-weight: 700;
+  font-size: 2rem;
+  margin-left: 3rem;
+}
