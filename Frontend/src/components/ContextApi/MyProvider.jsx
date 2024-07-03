@@ -5,7 +5,7 @@ import MessageComponent from "../MessageComponent/MessageComponent";
 import { getTasks, deleteTask, getTaskDescription } from "../../apis/task";
 import { copyToClipboard } from "../../utils/helper";
 import TaskEditModal from "../TaskEditModal/TaskEditModal";
-import LoadingMessage from "../LoadingMessage/LoadingMessage";
+
 
 function Provider({ children }) {
   const [selectedOption, setSelectedOption] = useState("thisWeek");
@@ -136,7 +136,7 @@ function Provider({ children }) {
     >
       {children}
       {message && <MessageComponent message={message} />}
-      {isLoading && <LoadingMessage />}
+    
       {
         <TaskEditModal
           isOpen={isEditModalOpen}

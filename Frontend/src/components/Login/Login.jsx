@@ -6,7 +6,7 @@ import lock from "../../assets/icons/lock.svg";
 import { useNavigate } from "react-router-dom";
 import { loginUser } from "../../apis/auth";
 import styles from "./Login.module.css";
-import LoadingMessage from "../LoadingMessage/LoadingMessage";
+
 function Login() {
   const navigate = useNavigate();
   const [userData, setUserData] = useState({
@@ -122,7 +122,7 @@ function Login() {
           Register
         </button>
       </div>
-      {isLoading && <LoadingMessage />}
+     
       <Toaster
         position="top-center"
         reverseOrder={false}

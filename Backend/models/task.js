@@ -36,10 +36,12 @@ const taskSchema = new mongoose.Schema(
       enum: ["todo", "backlog", "progress", "done"],
       default: "todo",
     },
-    refUserId: {
-      type: mongoose.Schema.Types.ObjectId,
-      required: true,
-    },
+    refUserId: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        required: true,
+      },
+    ],
   },
   { timestamps: true }
 );

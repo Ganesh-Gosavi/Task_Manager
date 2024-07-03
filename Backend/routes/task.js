@@ -1,6 +1,9 @@
 const express = require("express");
 const router = express.Router();
 const Task = require("../models/task");
+const User = require("../models/user");
+const mongoose = require("mongoose");
+
 const moment = require("moment-timezone");
 const verifyJwtToken = require("../middlewares/authMiddleware");
 
@@ -319,6 +322,52 @@ router.put("/checklist/:taskId/:itemId", verifyJwtToken, async (req, res) => {
       message: "Internal Server Error",
       success: false,
     });
+  }
+});
+
+router.put("/addRefUserId", async (req, res) => {
+  const { refUserId, email } = req.body;
+
+  if (!mongoose.Types.ObjectId.isValid(refUserId)) {
+    return res.status(400).send({ error: "Invalid user ID provided" });
+  }
+
+  try {
+    // Fetch the user to ensure it exists
+    const user = await User.findOne({ email });
+    if (!user) {
+      return res.status(404).send({ error: "User not found" });
+    }
+
+    // Log the user details
+    console.log(`User found: ${user}`);
+
+    // Fetch tasks with the given refUserId
+    const tasks = await Task.find({ refUserIds: refUserId });
+
+    // Log the number of tasks found
+    console.log(`Number of tasks found: ${tasks.length}`);
+
+    if (tasks.length === 0) {
+      return res
+        .status(404)
+        .send({ error: "No tasks found for the provided refUserId" });
+    }
+
+    // Add newRefUserId to each task, ensuring no duplicates
+    const updatedTasks = await Promise.all(
+      tasks.map(async (task) => {
+        if (!task.refUserIds.includes(user._id)) {
+          task.refUserIds.push(user._id);
+          return task.save();
+        }
+        return task;
+      })
+    );
+
+    res.send(updatedTasks);
+  } catch (error) {
+    res.status(500).send(error);
   }
 });
 

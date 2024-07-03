@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import styles from "./CheckItem.module.css";
 import { checkItems } from "../../apis/task";
-import MyContext from "../ContextApi/MyContext";
 function CheckItem({ taskId, itemId, name, selected, onCheckboxChange }) {
   const [isChecked, setIsChecked] = useState(selected);
 

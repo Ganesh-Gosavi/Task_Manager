@@ -8,7 +8,7 @@ import lock from "../../assets/icons/lock.svg";
 import { getUserInfo } from "../../utils/helper";
 import { updateUsernameOrPassword } from "../../apis/auth";
 import { useNavigate } from "react-router-dom";
-import LoadingSpinner from "../LoadingSpinner/LoadingSpinner";
+
 function Settings() {
   const navigate = useNavigate();
 
@@ -94,7 +94,7 @@ function Settings() {
   return (
     <div className={styles.mainSettingSection}>
       <p className={styles.heading}>Settings</p>
-      {isLoading && <LoadingSpinner />}
+
       {!isLoading && (
         <>
           <div className={styles.form}>

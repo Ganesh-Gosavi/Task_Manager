@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import styles from "./Analytics.module.css";
 import { getAnalyticsData } from "../../apis/task";
 import toast, { Toaster } from "react-hot-toast";
-import LoadingSpinner from "../LoadingSpinner/LoadingSpinner";
 function Analytics() {
   const [analyticData, setAnalyticData] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
@@ -30,7 +29,7 @@ function Analytics() {
   return (
     <div className={styles.mainAnalyticSection}>
       <p className={styles.heading}>Analytics</p>
-      {isLoading && <LoadingSpinner />}
+      
       {!isLoading && analyticData ? (
         <div className={styles.cards}>
           <div className={styles.cardItem}>
