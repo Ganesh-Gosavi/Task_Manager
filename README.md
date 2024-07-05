@@ -12,7 +12,7 @@ Navigate to the backend directory:
 
 
 
-cd backend
+cd backend     
 Install dependencies:
 
 
