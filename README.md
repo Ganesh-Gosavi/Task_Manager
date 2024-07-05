@@ -6,7 +6,7 @@ Clone the repository
 
 
 git clone https://github.com/Ganesh-Gosavi/TaskManager.git
-cd TaskManager
+cd TaskManager    
 Backend Setup
 Navigate to the backend directory      
 
