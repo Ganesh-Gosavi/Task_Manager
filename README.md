@@ -85,7 +85,6 @@ Ensure you have the following installed on your local development environment:
 
 ## 📸 Screenshots
 
-![App Screenshot](./TaskManager/crud.png)
 
 ![App Screenshot](./TaskManager/ss1.png)
 
