@@ -1,64 +1,104 @@
-Installation
-Prerequisites
-Node.js and npm installed
-MongoDB instance running
-Clone the repository
+# ✅Task Manager Application
 
+This project is a **CRUD** (Create, Read, Update, Delete) application for managing ToDo items. It is built using the **MERN** stack, consisting of **MongoDB**, **Express.js**, **React.js**, and **Node.js**.
 
-git clone https://github.com/Ganesh-Gosavi/TaskManager.git
-cd TaskManager    
-Backend Setup
-Navigate to the backend directory      
+## ✨ Features
 
+- 📝 **Create ToDo**: Add new ToDo items with details.
+- 👁️ **Read ToDo**: View the list of all ToDo items.
+- ✏️ **Update ToDo**: Edit details of existing ToDo items.
+- ❌ **Delete ToDo**: Remove ToDo items from the list.
+- 📱 **Responsive Design**: Optimized for both desktop and mobile views.
 
+## 🛠️ Tech Stack
 
-cd backend     
-Install dependencies:
+- **Frontend**: React.js, CSS, Tailwind CSS
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
 
+## ⚙️ Getting Started
 
-npm install
-Create a .env file and add your environment variables:
+### 📋 Prerequisites
 
+Ensure you have the following installed on your local development environment:
 
-MONGO_URI=<your-mongodb-uri>
-JWT_SECRET=<your-jwt-secret>
-Start the backend server:
+- **Node.js** (v14 or later)
+- **npm** (v6 or later)
+- **MongoDB** (local or cloud-based)
 
-npm start
-Frontend Setup
-Navigate to the frontend directory:
+### 📥 Installation
 
+1. **Clone the repository**:
 
-cd ../frontend
-Install dependencies:
+    ```bash
+    git clone https://github.com/Ganesh-Gosavi/AssestmentTodoCrudOpn.git
+    ```
 
+2. **Navigate to the project directory**:
 
-npm install
-Start the frontend development server:
+    ```bash
+    cd assessment-todo-crud
+    ```
 
-npm start
-The app should now be running on http://localhost:3000 with the backend running on http://localhost:5000.
+3. **Install the dependencies** for both the client and server:
 
-Usage
-Open your browser and navigate to http://localhost:3000.
-Register for a new account or log in with an existing account.
-Start managing your tasks: create, update, delete, and categorize them as needed.
-Features
-User authentication (registration and login)
-Create, read, update, and delete tasks
-Task categorization
-Responsive design
-Technologies
-Frontend:
+    - For the **client**:
 
-React.js
-Redux
-Tailwind CSS
-Backend:
+        ```bash
+        cd Frontend
+        npm install
+        ```
 
-Node.js
-Express.js
-MongoDB
-Authentication:
+    - For the **server**:
 
-JWT (JSON Web Tokens)
+        ```bash
+        cd Backend
+        npm install
+        ```
+
+## 🔧 Configuration
+
+1. Create a `.env` file in the `server` directory and add the following environment variables:
+
+    ```bash
+    PORT=5000
+    MONGO_URI=your_mongodb_connection_string
+    ```
+
+## 🚀 Running the Application
+
+1. **Start the backend server**:
+
+    ```bash
+    cd Backend
+    npm start
+    ```
+
+2. **Start the frontend development server**:
+
+    ```bash
+    cd Frontend
+    npm start
+    ```
+
+3. Open your browser and navigate to `http://localhost:3000` to view the application.
+
+## 📸 Screenshots
+
+![App Screenshot](./TaskManager/crud.png)
+
+![App Screenshot](./TaskManager/ss1.png)
+
+![App Screenshot](./TaskManager/ss2.png)
+
+![App Screenshot](./TaskManager/ss3.png)
+
+![App Screenshot](./TaskManager/ss4.png)
+
+![App Screenshot](./TaskManager/ss5.png)
+
+![App Screenshot](./TaskManager/ss6.png)
+
+## 📝 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
